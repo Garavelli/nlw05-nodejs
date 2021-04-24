@@ -1,21 +1,9 @@
 import express from 'express';
-
+import './database';
+import { routes } from './routes'
 const app = express();
 
-/** 
- * GET
- * POST 
- * PUT
- * DELETE
- * PATCH
-*/
-
-app.get("/", (request, response) => {
-  return response.json({message:"hello"});
-});
-
-app.post("/", (request, response) => {
-  return response.json({message: "Ok"})
-})
+app.use(express.json());
+app.use(routes);
 
 app.listen(3333, () => console.log("server is up and running on port 33333"))
