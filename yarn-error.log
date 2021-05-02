@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @type/uuid -D
+  c:\program files\nodejs\node.exe c:\Program Files (x86)\Yarn\bin\yarn.js add socket.io]
 
 PATH: 
-  C:\Python39\Scripts\;C:\Python39\;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\lib\Elixir/bin;C:\Program Files\erl10.3\bin;C:\Users\Maycon\.mix\escripts;C:\Users\Maycon\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Maycon\AppData\Local\Programs\Python\Python38-32\;C:\Users\Maycon\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.1\bin;C:\Users\Maycon\AppData\Local\GitHubDesktop\bin;C:\Users\Maycon\AppData\Roaming\npm;C:\Users\Maycon\AppData\Local\Yarn\;C:\Users\Maycon\AppData\Local\Yarn\bin;C:\Users\Maycon\AppData\Local\Programs\Microsoft VS Code\bin;C:\adb;C:\Program Files\Git\cmd;
+  c:\python39\scripts\;c:\python39\;c:\python38\scripts\;c:\python38\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\programdata\chocolatey\bin;c:\program files\dotnet\;c:\program files\nvidia corporation\nvidia nvdlisr;c:\program files\nodejs\;c:\program files (x86)\yarn\bin\;c:\programdata\chocolatey\lib\elixir/bin;c:\program files\erl10.3\bin;c:\users\maycon\.mix\escripts;c:\users\maycon\appdata\local\programs\python\python38-32\scripts\;c:\users\maycon\appdata\local\programs\python\python38-32\;c:\users\maycon\appdata\local\microsoft\windowsapps;c:\program files\jetbrains\pycharm community edition 2020.2.1\bin;c:\users\maycon\appdata\local\githubdesktop\bin;c:\users\maycon\appdata\roaming\npm;c:\users\maycon\appdata\local\yarn\;c:\users\maycon\appdata\local\yarn\bin;c:\users\maycon\appdata\local\programs\microsoft vs code\bin;c:\adb;c:\program files\git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Maycon\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Maycon\AppData\Local\Programs\Python\Python38-32\;C:\Users\Maycon\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.1\bin;C:\Users\Maycon\AppData\Local\GitHubDesktop\bin;C:\Users\Maycon\AppData\Roaming\npm;C:\Users\Maycon\AppData\Local\Yarn\bin;C:\Users\Maycon\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Maycon\.dotnet\tools
 
 Yarn version: 
   1.22.5
@@ -14,13 +14,13 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@type%2fuuid: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
+  Error: https://registry.yarnpkg.com/socket.io]: Not found
+      at Request.params.callback [as _callback] (c:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
+      at Request.self.callback (c:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
       at Request.emit (node:events:327:20)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
+      at Request.<anonymous> (c:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
       at Request.emit (node:events:327:20)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141643:12)
+      at IncomingMessage.<anonymous> (c:\Program Files (x86)\Yarn\lib\cli.js:141643:12)
       at Object.onceWrapper (node:events:433:28)
       at IncomingMessage.emit (node:events:339:22)
       at endReadableNT (node:internal/streams/readable:1289:12)
@@ -46,6 +46,7 @@ npm manifest:
     },
     "devDependencies": {
       "@types/express": "^4.17.11",
+      "@types/uuid": "^8.3.0",
       "typescript": "^4.2.4"
     }
   }
@@ -134,6 +135,11 @@ Lockfile:
     version "0.0.30"
     resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
     integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
+  
+  "@types/uuid@^8.3.0":
+    version "8.3.0"
+    resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.0.tgz#215c231dff736d5ba92410e6d602050cce7e273f"
+    integrity sha512-eQ9qFW/fhfGJF8WKHGEHZEyVWfZxrT+6CLIJGBcZPfxUh/+BnEj+UCGYMlr9qZuX/2AltsvwrGqp0LhEW8D0zQ==
   
   "@types/zen-observable@^0.8.2":
     version "0.8.2"
