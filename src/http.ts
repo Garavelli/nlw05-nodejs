@@ -15,10 +15,6 @@ const io = new Server(http, {
     credentials: true
   }
 });
-io.on("connection", (socket: Socket) => {
-  console.log("Connected as: ", socket.id);
-});
-
 
 app.use(express.json());
 

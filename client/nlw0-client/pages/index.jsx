@@ -1,11 +1,12 @@
-import ChatBox from "../components/ChatBox"
+import ChatBox from "../components/ChatBox";
+import axios from 'axios';
 
 const backgroundColor = '#eee'
 
-export default function Home() {
+export default function Home({ chat }) {
   return (
     <div className="container">
-      <ChatBox />
+      {chat && <ChatBox />}
 
 
 
@@ -21,4 +22,19 @@ export default function Home() {
       `}</style>
     </div>
   )
+}
+
+export async function getServerSideProps(context) {
+  let chat = true;
+  const response = await axios.get('http://localhost:3333/settings/admin');
+  console.log(response.data)
+  if (!response.data.chat) {
+    chat = false
+  }
+
+  return {
+    props: {
+      chat: chat
+    }
+  }
 }
